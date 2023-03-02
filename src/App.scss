@@ -21,14 +21,7 @@
     font-weight: bold;
     height: 4rem;
     width: 15rem;
-
-    &.disable {
-      opacity: 0.6;
-
-      &:hover {
-        cursor: not-allowed;
-      }
-    }
+    box-shadow: 0 0 10px black;
 
     &:hover {
       background-color: lightcoral;
@@ -36,6 +29,14 @@
       cursor: pointer;
       transform: scale(1.1);
       transition: 0.1s ease-in-out;
+    }
+
+    &.disable {
+      opacity: 0.6;
+
+      &:hover {
+        cursor: not-allowed;
+      }
     }
   }
 }
