@@ -8,15 +8,20 @@ function App() {
   const [random, setRandom] = useState<number>(0);
 
   const handleSpin = () => {
-    setRandom(Math.floor(Math.random() * 3));
-    setSpin(true);
-    setTimeout(() => setSpin(false), 1000);
+    if (!spin) {
+      setRandom(Math.floor(Math.random() * 3));
+      setSpin(true);
+      setTimeout(() => setSpin(false), 11500);
+    }
   };
 
   return (
     <div className="App">
       <span className="App-title">c ki ki review ma pr??</span>
-      <button className="App-button" onClick={() => handleSpin()}>
+      <button
+        className={`App-button ${!spin ? "" : "disable"}`}
+        onClick={() => handleSpin()}
+      >
         tente ta chance
       </button>
       <Wheel mustStartSpinning={spin} prizeNumber={random} data={data} />

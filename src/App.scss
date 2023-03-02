@@ -22,6 +22,14 @@
     height: 4rem;
     width: 15rem;
 
+    &.disable {
+      opacity: 0.6;
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+
     &:hover {
       background-color: lightcoral;
       color: white;
