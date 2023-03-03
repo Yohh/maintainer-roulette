@@ -9,7 +9,7 @@ const App = () => {
 
   const handleSpin = () => {
     if (!spin) {
-      setRandom(Math.floor(Math.random() * 3));
+      setRandom(Math.floor(Math.random() * data.length));
       setSpin(true);
       setTimeout(() => setSpin(false), 11500);
     }
