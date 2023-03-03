@@ -1,9 +1,9 @@
+import { useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import { data } from "./data";
 import "./App.scss";
-import { useState } from "react";
 
-function App() {
+const App = () => {
   const [spin, setSpin] = useState<boolean>(false);
   const [random, setRandom] = useState<number>(0);
 
@@ -27,6 +27,6 @@ function App() {
       <Wheel mustStartSpinning={spin} prizeNumber={random} data={data} />
     </div>
   );
-}
+};
 
 export default App;
