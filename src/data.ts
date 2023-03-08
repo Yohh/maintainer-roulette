@@ -1,7 +1,11 @@
 export const data = [
   {
     option: "Mathieu",
-    style: { backgroundColor: "green", textColor: "black" },
+    style: { backgroundColor: "orange", textColor: "black" },
+  },
+  {
+    option: "Clara",
+    style: { backgroundColor: "lime", textColor: "black" },
   },
   {
     option: "Alexandre",
